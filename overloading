@@ -1,0 +1,50 @@
+//-->OVER LOADING
+class Kiran{
+   int add(int a ,int b){
+
+      return a+b;
+   }
+   int add(int a,int b,int c){
+      return a+b+c;
+   }
+
+public static void main(String args[]){
+   Kiran obj = new Kiran();
+   System.out.println(obj.add(9,8));
+   System.out.println(obj.add(9,8,7));
+}
+}
+//-->OVER RAIDING
+class Bike{
+   void run(){
+   System.out.println("bike is running");  
+   }
+}
+class Cycle extends Bike{
+   void run()
+   {
+      System.out.println("cycle is running");
+   }
+   public static void main(String []args){
+      Cycle obj = new Cycle();
+      obj.run();
+   }
+}
+//-->STATIC METHOD
+ class StaticKeyword {
+   static int x = 10;
+
+   static void display() {
+       System.out.println("static method");
+   }
+
+   static {
+       System.out.println("static block");
+   }
+
+   public static void main(String[] args) {
+       System.out.println(x);
+       display();
+   }
+}
+ 
