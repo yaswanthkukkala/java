@@ -1,0 +1,38 @@
+//-->constructor
+class COL{
+    COL(int a,int b){
+        System.out.println(a+b);
+    }
+    COL(int a,int b,int c){
+        System.out.println(a+b+c);
+    }
+    public static void main(String args[]){
+    COL obj=new COL(2,3);
+    COL obj1=new COL(2,3,5);
+    }
+
+
+}
+//-->constructor overloading
+class COL{
+    String name;
+    int rollno;
+    COL(){
+        name = "cse";
+        rollno=5;
+    System.out.println(name+rollno);
+    }
+    COL(String str,int n){
+        name=str;
+        rollno=n;
+        System.out.println(name+rollno);
+    }
+    public static void main(String args[]){
+        COL obj=new COL();
+        COL obj1=new COL("sai",6);
+        System.out.println(obj.name);
+        System.out.println(obj.rollno);
+        System.out.println(obj1.name);
+        System.out.println(obj1.rollno);
+    }
+}
