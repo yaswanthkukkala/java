@@ -1,0 +1,19 @@
+import java.util.*;
+class Animal {
+     void display(){
+        System.out.println("hello");
+    }
+    
+}
+class Dog extends Animal{
+    public void run(){
+        System.out.println("run");
+    }
+}
+class Main{
+    public static void main(String args[]){
+        Dog obj=new Dog();
+        obj.display();
+        obj.run();
+    }
+}
