@@ -1,0 +1,20 @@
+interface animal{
+    public void sound();
+}
+interface pet{
+    public void eat();
+}
+class dog implements animal,pet{
+    public void sound(){
+        System.out.println("animal making sound");
+    }
+   public void eat(){
+        System.out.println("pet is eating");    }
+}
+class Main{
+    public static void main(String args[]){
+        dog obj=new dog();
+        obj.sound();
+        obj.eat();
+    }
+}
